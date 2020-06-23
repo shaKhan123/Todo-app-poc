@@ -44,11 +44,6 @@ const TodoList = () => {
     dispatch({ type: TOGGLE_TODO, value });
   };
 
-  const handleChange = (e) => {
-    e.stopPropagation();
-    console.log(e);
-  };
-
   return (
     <List className={classes.root}>
       {(todos || []).map((todo, index) => {
